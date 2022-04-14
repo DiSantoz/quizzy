@@ -1,4 +1,4 @@
-# quzzy
+# quizzy
 
 ## License
 
