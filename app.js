@@ -3,6 +3,8 @@ const correctAnswer = ["B", "B", "B", "B"];
 
 const form = document.querySelector(".quiz-form");
 
+const result = document.querySelector(".result");
+
 // when submit is clicked, verify user's answers
 form.addEventListener("submit", (e) => {
   // prevent's page refreshing upon click
@@ -26,5 +28,8 @@ form.addEventListener("submit", (e) => {
     }
   });
 
-  console.log(score);
+  //   remove class to display score
+
+  result.querySelector("span").textContent = `${score}%`;
+  result.classList.remove("d-none");
 });
