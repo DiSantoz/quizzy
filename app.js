@@ -28,8 +28,11 @@ form.addEventListener("submit", (e) => {
     }
   });
 
-  //   remove class to display score
+  //   show results
 
+  //   scroll to top of page
+  scrollTo(0, 0);
   result.querySelector("span").textContent = `${score}%`;
+  //   remove class to display scroe
   result.classList.remove("d-none");
 });
